@@ -1,0 +1,33 @@
+#password_entry = int(input("Please enter the password "))
+#password = 10
+
+#if password_entry == password:
+#    print("access granted")
+#else:
+#    print("access denied")
+
+#grade_entry = int(input("Please enter your grade "))
+
+#if grade_entry >= 85:
+#    print("Distinction")
+#elif grade_entry >= 65:
+#    print("Pass")
+#else:
+#    print("Fail")
+
+#type = str.lower(input("Please enter if you are using kgs or lbs "))
+#weight = float(input("Please input your weight "))
+
+#if type in ("kgs"):
+#    print(f"Your weight in lbs is {round(weight * 2.2, 2)} " )
+#elif type in ("lbs"):
+#    print(f"Your weight in kgs is {round(weight / 2.2, 2)} " )
+#else:
+#    print("invalid entry, please enter either kgs or lbs")
+
+#count = 0
+#while count < 5:
+#    name = input("Enter a name: ")
+#    print(name + " is awesome")
+#    count += 1
+    
