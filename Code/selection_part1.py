@@ -1,4 +1,3 @@
-#selection_part1
 
 #age = int(input("What is your age: "))
 

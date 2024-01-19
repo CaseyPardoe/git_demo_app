@@ -19,4 +19,4 @@ def get_income_tax(salary):
     
 print(get_income_tax(12500))
 print(get_income_tax(40500))
-print(get_income_tax(170500.52))
+print(get_income_tax(170500))
