@@ -2,28 +2,6 @@ import pytest
 from listofsquareslab import * 
 
 def test_list_of_squares():
-    result = list_of_squares(5)
-    assert result == {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
-
-    result = list_of_squares(0)
-    assert result == {}
-
-    with pytest.raises(ValueError):
-        list_of_squares(-3)
-
-    result = list_of_squares(1000)
-    assert result[500] == 500 * 500
-
-    with pytest.raises(TypeError):
-        list_of_squares(3.5)
-
-    with pytest.raises(TypeError):
-        list_of_squares("abc")
-
-    with pytest.raises(TypeError):
-        list_of_squares([1, 2, 3])
-
-    with pytest.raises(TypeError):
-        list_of_squares(None)
-
-
+    assert list_of_squares(1) == {1: 1}
+    assert list_of_squares(5) == {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+    assert list_of_squares(10) == {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}

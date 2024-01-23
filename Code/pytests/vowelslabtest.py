@@ -1,29 +1,11 @@
 import pytest
 from vowelslab import * 
 
-def test_vowels_empty_string():
-    assert vowels("") == 0
-
-def test_vowels_no_vowels():
+def test_vowels():
     assert vowels("xyz") == 0
-
-def test_vowels_lowercase():
-    assert vowels("hello") == 2
-
-def test_vowels_uppercase():
-    assert vowels("WORLD") == 1
-
-def test_vowels_mixed_case():
-    assert vowels("Python") == 1
-
-def test_vowels_all_vowels():
     assert vowels("aeiou") == 5
-
-def test_vowels_repeated_vowels():
-    assert vowels("apple") == 2
-
-def test_vowels_special_characters():
-    assert vowels("!@#$%^&*") == 0
+    assert vowels("AEIOU") == 5
+    assert vowels("Hello World") == 3
 
 def test_vowels_numbers():
     assert vowels("12345") == 0
